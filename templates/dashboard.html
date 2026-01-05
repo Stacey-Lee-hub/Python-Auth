@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Dashboard</h1>
+    
+<p class="welcome-text">
+    Welcome, <span class="username">{{ username }}</span>!
+</p>
+<p>You have successfully logged into the application.</p>
+    
+<div class="dashboard-actions">
+    <a href="{{ url_for('home') }}" class="btn btn-primary">Go to Home</a>
+    <a href="{{ url_for('logout') }}" class="btn btn-logout">Logout</a>
+</div>
+{% endblock %}
